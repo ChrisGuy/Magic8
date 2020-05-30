@@ -92,10 +92,10 @@ body {
 
 .instructions {
   position: absolute;
-  width: 300px;
+  width: 100%;
   top: 20px;
-  left: 20px;
-  font-size: 24px;
+  font-size: 5vw;
+  text-align: center;
 }
 
 .shake {
@@ -119,4 +119,18 @@ body {
   80% { transform: translate(50px, 50px) rotate(6deg); }
   90% { transform: translate(-50px, -50px) rotate(0deg); }
   100% { transform: translate(50px, 50px) rotate(-6deg); }
+}
+
+/*******************************************************************************
+** MEDIA QUERIES **
+*******************************************************************************/
+
+@media screen and (min-width: 992px) {
+  .instructions {
+    position: absolute;
+    width: 300px;
+    top: 20px;
+    left: 20px;
+    font-size: 24px;
+  }
 }
